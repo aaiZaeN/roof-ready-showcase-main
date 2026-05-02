@@ -29,44 +29,33 @@ function NotFoundComponent() {
 export const Route = createRootRoute({
   head: () => ({
     meta: [
-  { charSet: "utf-8" },
-  { name: "viewport", content: "width=device-width, initial-scale=1" },
-  // Titre réaliste pour le métier
-  { title: "Maison Mercier — Artisan Couvreur Zingueur dans l'Hérault (Site Démo)" },
-  {
-    name: "description",
-    content:
-      "DEMO : Exemple de site pour couvreur zingueur. Spécialiste toiture, étanchéité et charpente dans l'Hérault. Modèle de site professionnel pour artisans.",
-  },
-  { name: "author", content: "Design Artisans - Site Exemple" },
-  { property: "og:type", content: "website" },
-  { name: "twitter:card", content: "summary_large_image" },
-  
-  // OpenGraph (Réseaux sociaux)
-  { 
-    property: "og:title", 
-    content: "Maison Mercier — Expert Toiture (Modèle de Site)" 
-  },
-  { 
-    name: "twitter:title", 
-    content: "Maison Mercier — Expert Toiture (Modèle de Site)" 
-  },
-  
-  // Descriptions harmonisées (Français + Mention Démo)
-  { 
-    name: "description", 
-    content: "Ceci est une page de démonstration. Maison Mercier représente le savoir-faire en couverture et zinguerie pour ce template de site internet." 
-  },
-  { 
-    property: "og:description", 
-    content: "Découvrez ce modèle de site vitrine pour couvreur. Qualité visuelle, performance et prise de contact optimisée." 
-  },
-  { 
-    name: "twitter:description", 
-    content: "Modèle de site internet pour artisan couvreur. Exemple : Maison Mercier, zinguerie et toiture dans le 34." 
-  },
-  
-],
+      { charSet: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { title: "Maison Mercier — Artisan Couvreur Zingueur dans l'Hérault (Site Démo)" },
+      {
+        name: "description",
+        content: "DEMO : Exemple de site pour couvreur zingueur dans l'Hérault. Modèle de site professionnel pour artisans (Maison Mercier).",
+      },
+      { name: "author", content: "Design Artisans - Site Exemple" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { 
+        property: "og:title", 
+        content: "Maison Mercier — Expert Toiture (Modèle de Site)" 
+      },
+      { 
+        name: "twitter:title", 
+        content: "Maison Mercier — Expert Toiture (Modèle de Site)" 
+      },
+      { 
+        property: "og:description", 
+        content: "Découvrez ce modèle de site vitrine pour couvreur. Qualité visuelle et performance pour artisans." 
+      },
+      { 
+        name: "twitter:description", 
+        content: "Modèle de site internet pour artisan couvreur. Exemple : Maison Mercier, zinguerie et toiture dans le 34." 
+      },
+    ], // La virgule ici est cruciale
     links: [{ rel: "stylesheet", href: appCss }],
   }),
   shellComponent: RootShell,
