@@ -29,25 +29,53 @@ function NotFoundComponent() {
 export const Route = createRootRoute({
   head: () => ({
     meta: [
-      { charSet: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Maison Mercier — Artisan Couvreur Zingueur dans l'Hérault" },
-      {
-        name: "description",
-        content:
-          "Couvreur zingueur dans l'Hérault depuis 1998. Couverture, étanchéité, charpente, démoussage. Devis gratuit, garantie décennale, intervention rapide.",
-      },
-      { name: "author", content: "Maison Mercier" },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:title", content: "Maison Mercier — Artisan Couvreur Zingueur dans l'Hérault" },
-      { name: "twitter:title", content: "Maison Mercier — Artisan Couvreur Zingueur dans l'Hérault" },
-      { name: "description", content: "Roof Ready Showcase is a comprehensive website template for roofing contractors, designed to attract clients." },
-      { property: "og:description", content: "Roof Ready Showcase is a comprehensive website template for roofing contractors, designed to attract clients." },
-      { name: "twitter:description", content: "Roof Ready Showcase is a comprehensive website template for roofing contractors, designed to attract clients." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/631c7341-0222-4430-8027-2ed916a42b3b/id-preview-dad260be--114f4228-67c0-4cd8-87b9-db92112875ba.lovable.app-1776958581330.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/631c7341-0222-4430-8027-2ed916a42b3b/id-preview-dad260be--114f4228-67c0-4cd8-87b9-db92112875ba.lovable.app-1776958581330.png" },
-    ],
+  { charSet: "utf-8" },
+  { name: "viewport", content: "width=device-width, initial-scale=1" },
+  // Titre réaliste pour le métier
+  { title: "Maison Mercier — Artisan Couvreur Zingueur dans l'Hérault (Site Démo)" },
+  {
+    name: "description",
+    content:
+      "DEMO : Exemple de site pour couvreur zingueur. Spécialiste toiture, étanchéité et charpente dans l'Hérault. Modèle de site professionnel pour artisans.",
+  },
+  { name: "author", content: "Design Artisans - Site Exemple" },
+  { property: "og:type", content: "website" },
+  { name: "twitter:card", content: "summary_large_image" },
+  
+  // OpenGraph (Réseaux sociaux)
+  { 
+    property: "og:title", 
+    content: "Maison Mercier — Expert Toiture (Modèle de Site)" 
+  },
+  { 
+    name: "twitter:title", 
+    content: "Maison Mercier — Expert Toiture (Modèle de Site)" 
+  },
+  
+  // Descriptions harmonisées (Français + Mention Démo)
+  { 
+    name: "description", 
+    content: "Ceci est une page de démonstration. Maison Mercier représente le savoir-faire en couverture et zinguerie pour ce template de site internet." 
+  },
+  { 
+    property: "og:description", 
+    content: "Découvrez ce modèle de site vitrine pour couvreur. Qualité visuelle, performance et prise de contact optimisée." 
+  },
+  { 
+    name: "twitter:description", 
+    content: "Modèle de site internet pour artisan couvreur. Exemple : Maison Mercier, zinguerie et toiture dans le 34." 
+  },
+  
+  // Images (Gardez vos liens R2 actuels s'ils correspondent aux visuels de toiture)
+  { 
+    property: "og:image", 
+    content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/631c7341-0222-4430-8027-2ed916a42b3b/id-preview-dad260be--114f4228-67c0-4cd8-87b9-db92112875ba.lovable.app-1776958581330.png" 
+  },
+  { 
+    name: "twitter:image", 
+    content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/631c7341-0222-4430-8027-2ed916a42b3b/id-preview-dad260be--114f4228-67c0-4cd8-87b9-db92112875ba.lovable.app-1776958581330.png" 
+  },
+]
     links: [{ rel: "stylesheet", href: appCss }],
   }),
   shellComponent: RootShell,
