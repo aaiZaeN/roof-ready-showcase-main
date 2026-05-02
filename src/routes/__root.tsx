@@ -66,7 +66,7 @@ export const Route = createRootRoute({
     content: "Modèle de site internet pour artisan couvreur. Exemple : Maison Mercier, zinguerie et toiture dans le 34." 
   },
   
-]
+],
     links: [{ rel: "stylesheet", href: appCss }],
   }),
   shellComponent: RootShell,
