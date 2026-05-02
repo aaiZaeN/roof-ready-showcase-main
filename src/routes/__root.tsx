@@ -66,15 +66,6 @@ export const Route = createRootRoute({
     content: "Modèle de site internet pour artisan couvreur. Exemple : Maison Mercier, zinguerie et toiture dans le 34." 
   },
   
-  // Images (Gardez vos liens R2 actuels s'ils correspondent aux visuels de toiture)
-  { 
-    property: "og:image", 
-    content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/631c7341-0222-4430-8027-2ed916a42b3b/id-preview-dad260be--114f4228-67c0-4cd8-87b9-db92112875ba.lovable.app-1776958581330.png" 
-  },
-  { 
-    name: "twitter:image", 
-    content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/631c7341-0222-4430-8027-2ed916a42b3b/id-preview-dad260be--114f4228-67c0-4cd8-87b9-db92112875ba.lovable.app-1776958581330.png" 
-  },
 ]
     links: [{ rel: "stylesheet", href: appCss }],
   }),
